@@ -12,7 +12,8 @@ app.add_middleware(
     CORSMiddleware,
     allow_origins=[
         "https://www.onlinecoursecompare.com",
-        "http://localhost:5173"  # Keep this if you're testing locally too
+        "http://localhost:5173",  # Keep this if you're testing locally too
+        "http://localhost:3000",  # For Next.js development server
     ],
     allow_credentials=True,
     allow_methods=["*"],
